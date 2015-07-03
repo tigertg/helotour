@@ -1,4 +1,13 @@
 Congrats, you just set up your cloud code project.
-        <script language="javascript" src="../cloud/main.js">
+<script src="https://cdn1.lncld.net/static/js/av-mini-0.5.5.js"></script>
+        <script language="javascript" >
+            AV.initialize("r174ol9sen9fqgu7c7ijypswfl5m02jaswzi836vq3q1cimp", "gzcf833gm8w4455m8oeu3c1jhfeiu7h7qorvpha33bfl77dy");
+            var TestObject = AV.Object.extend("TestObject");
+            var testObject = new TestObject();
+            testObject.save({foo: "bar"}, {
+                success: function(object) {
+                    alert("LeanCloud works!");
+                }
+            });
 
         </script>
